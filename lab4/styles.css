@@ -4,7 +4,7 @@
     padding: 20px;
   }
 
-.seccao-pequena {
+.seccao-pequena, a {
     background-color: #414e52;
     color: white;
     padding: 5px;
