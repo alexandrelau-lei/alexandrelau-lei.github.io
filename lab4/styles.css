@@ -25,3 +25,16 @@ a:hover, .seccao-pequena {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
