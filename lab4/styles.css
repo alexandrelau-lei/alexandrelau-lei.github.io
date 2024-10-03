@@ -2,10 +2,12 @@
     background-color: rgb(39, 201, 255);
     color: white;
     padding: 20px;
+    text-align: center;
   }
 
 .seccao-pequena, a {
     background-color: #414e52;
     color: white;
     padding: 5px;
+    text-align: center;
 }
