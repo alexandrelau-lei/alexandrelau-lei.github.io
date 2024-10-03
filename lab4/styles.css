@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-a:hover .seccao-pequena {
+a:hover, .seccao-pequena {
     background-color: #ddd;
     color: black;
 }
