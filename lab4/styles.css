@@ -1,3 +1,4 @@
-body {
-    background-color: #ff6aff;
-}
+.colored-section {
+    background-color: lightblue;
+    padding: 20px;
+  }
