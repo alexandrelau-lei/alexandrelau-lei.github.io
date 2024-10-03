@@ -1,9 +1,11 @@
 .colored-section {
     background-color: lightblue;
+    color: white;
     padding: 20px;
   }
 
 .seccao-pequena {
     background-color: #414e52;
+    color: white;
     padding: 5px;
 }
