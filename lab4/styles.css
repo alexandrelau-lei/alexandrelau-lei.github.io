@@ -38,3 +38,6 @@ label, input {
     display: block;
     margin-bottom: 10px;
 }
+.input-box {
+    margin: 5px;
+  }
