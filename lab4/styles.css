@@ -1,11 +1,18 @@
-.colored-section {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
     background-color: rgb(39, 201, 255);
     color: white;
     padding: 20px;
     text-align: center;
   }
 
-.seccao-pequena, a {
+nav, a {
     background-color: #414e52;
     color: white;
     padding: 5px;
@@ -13,8 +20,10 @@
     text-decoration: none;
 }
 
-a:hover, .seccao-pequena {
+nav, a:hover {
+    background-color: #ddd;
     color: black;
+    padding: 5px;
     text-decoration: none;
 }
 
