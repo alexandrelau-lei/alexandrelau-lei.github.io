@@ -49,4 +49,11 @@ label, input {
 }
 .input-box {
     margin: 5px;
-  }
+}
+
+footer p{
+    background-color: #4733e1;
+    padding: 4px;
+    text-align: center;
+    color: white;
+}
