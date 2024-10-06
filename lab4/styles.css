@@ -36,6 +36,7 @@ nav, a:hover {
 }
 
 .imagens p{
+    padding: 5px;
     height: auto;
     width: 32.2%;
     display: flex;              
