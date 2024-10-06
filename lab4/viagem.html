@@ -27,72 +27,54 @@
         <main>
             <img src = "images/WarsawChristmas.jpg" width="640" height="360">
 
-            <h1>Dados pessoais</h1>
-
-            <form method="get" action="https://postman-echo.com/get" id="viagem"></form>
-
-            <fieldset>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" autocomplete="on" maxlength="14" placeholder="Alexandre" autofocus required form="viagem"> 
-
-                <br>
-
-                <label for="apelido">Apelido: </label>
-                <input type="text" name="apelido" id="apelido" autocomplete="on" maxlength="14" size="18" placeholder="Lau" required form="viagem">
-
-                <br>
-
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" autocomplete="on" placeholder="alexandre.krawiec.lau@gmail.com" required form="viagem">
-            </fieldset>
-
-            <h1>Viagem</h1>
-
-            <fieldset>
-                <label for="dataDePartida">Data de partida</label>
-                <input type="date" name="Data" id="dataDePartida" required form="viagem">
-
-                <br>
-
-                <label for="dataDeChegada">Data de regresso</label>
-                <input type="date" name="Data" id="dataDeChegada" required form="viagem">
-
-                <br>
-
-                <label for="numeroDePassageiros">Número de passageiros: </label>
-                <input type="number" name="passageiros" id="numeroDePassageiros" step="1" required form="viagem">
-
-                <br>
-
-                <label for="transporte">Meio de transporte favorito: </label>
-                <input type="text" name="transporte" id="transporte" placeholder="carro, comboio, avião, entre outros" size="28" required form="viagem">
-
-                <br>
-
-                <p>Qual o serviço que deseja na sua viagem</p>
-                <label for="servico1">Basico </label>
-                <input type="radio" name="servico" id="servico1" required form="viagem">  
-
-                <br>
-
-                <label for="servico2">Premiun </label>
-                <input type="radio" name="servico" id="servico2" required form="viagem">
+            <section id="Topic">
+                <h1>Dados pessoais</h1>
                 
-                <br>
+                <form method="get" action="https://postman-echo.com/get" id="viagem">
+                    <fieldset>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" autocomplete="on" maxlength="14" placeholder="Alexandre" autofocus required form="viagem"> 
 
-                <label for="pedidoEspecial">Pedidos especiais: </label>
-                <input type="text" name="pedidoEspecial" id="pedidoEspecial" form="viagem">
+                        <label for="apelido">Apelido: </label>
+                        <input type="text" name="apelido" id="apelido" autocomplete="on" maxlength="14" size="18" placeholder="Lau" required form="viagem">
 
-                <br>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" autocomplete="on" placeholder="alexandre.krawiec.lau@gmail.com" required form="viagem">
+                    </fieldset>
 
-                <label for="valorGastar">Qual o valor que espera gastar por pessoa e por dia na sua viagem: </label>
-                <input type="number" name="valorGastar" id="valorGastar" step="1" required form="viagem">
+                    <h1>Viagem</h1>
 
-                <br>
+                    <fieldset>
+                        <label for="dataDePartida">Data de partida</label>
+                        <input type="date" name="Data" id="dataDePartida" required form="viagem">
 
-                <label for="enviar">Enviar: </label>
-                <input type="submit" name="submit" form="viagem">
-            </fieldset>
+                        <label for="dataDeChegada">Data de regresso</label>
+                        <input type="date" name="Data" id="dataDeChegada" required form="viagem">
+
+                        <label for="numeroDePassageiros">Número de passageiros: </label>
+                        <input type="number" name="passageiros" id="numeroDePassageiros" step="1" required form="viagem">
+
+                        <label for="transporte">Meio de transporte favorito: </label>
+                        <input type="text" name="transporte" id="transporte" placeholder="carro, comboio, avião, entre outros" size="28" required form="viagem">
+
+                        <p>Qual o serviço que deseja na sua viagem</p>
+                        <label for="servico1">Basico </label>
+                        <input type="radio" name="servico" id="servico1" required form="viagem">
+
+                        <label for="servico2">Premiun </label>
+                        <input type="radio" name="servico" id="servico2" required form="viagem">
+
+                        <label for="pedidoEspecial">Pedidos especiais: </label>
+                        <input type="text" name="pedidoEspecial" id="pedidoEspecial" form="viagem">
+
+                        <label for="valorGastar">Qual o valor que espera gastar por pessoa e por dia na sua viagem: </label>
+                        <input type="number" name="valorGastar" id="valorGastar" step="1" required form="viagem">
+
+                        <label for="enviar">Enviar: </label>
+                        <input type="submit" name="submit" form="viagem">
+                    </fieldset>
+                </form>
+            </section>
         </main>
 
         <footer>
