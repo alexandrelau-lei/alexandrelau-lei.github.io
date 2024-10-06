@@ -10,20 +10,21 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-  }
+}
 
-nav, a {
+nav{
     background-color: #414e52;
-    color: white;
     padding: 5px;
-    
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
 }
+
 
 nav, a:hover {
     background-color: #ddd;
     color: black;
-    padding: 5px;
+    padding: 20px;
     text-decoration: none;
 }
 
