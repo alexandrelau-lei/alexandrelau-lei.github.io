@@ -38,10 +38,9 @@ nav, a:hover {
 .imagens p{
     height: auto;
     width: 32.2%;
-    margin: 5px;
-    display: flex;          
+    display: flex;              
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
 label {
