@@ -51,6 +51,7 @@ nav, a:hover {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
 #Fotografias p{
     text-align: center;
 } 
@@ -59,9 +60,14 @@ nav, a:hover {
     display: block; 
     margin: 0 auto;
 }
+
 #Video iframe{
     display: block; 
     margin: 0 auto;
+}
+
+#Topic li{
+    margin: 10px;
 }
 
 #Poema h4, pre{
