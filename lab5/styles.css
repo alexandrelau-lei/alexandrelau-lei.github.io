@@ -37,7 +37,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc; /* Increase the border thickness */
     padding: 10px;
     text-align: center;
 }
@@ -53,6 +53,7 @@ th, td {
 th {
     background-color: rgb(39, 201, 255); /* Header color */
     color: white;
+    border: 2px solid #333; /* Border for the header */
 }
 
 #Fotografias h3, #Video h3, #Poema h3 {
