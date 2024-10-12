@@ -27,6 +27,18 @@ nav, a:hover {
     text-decoration: none;
 }
 
+ol {
+    list-style-type: lower-roman;
+}
+
+ol li:nth-child(odd) {
+    color: red;
+}
+
+ol li:nth-child(even) {
+    color: blue;
+}
+
 #Fotografias h3, #Video h3, #Poema h3 {
     color: #4CAF50;
     font-size: 24px;
