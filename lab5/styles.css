@@ -58,8 +58,8 @@ th {
 }
 
 .left-side {
-    list-style-type: disc; /* Ensures bullet points are shown */
-    padding-left: 20px; /* Adds left padding for better alignment */
+    list-style-type: circle;
+    padding-left: 20px;
 }
 
 #Fotografias h3, #Video h3, #Poema h3 {
