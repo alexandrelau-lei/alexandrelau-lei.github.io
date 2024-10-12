@@ -28,7 +28,7 @@ nav, a:hover {
 }
 
 ol {
-    list-style-type: lower-roman;
+    list-style-type: upper-roman;
 }
 
 ol li:nth-child(odd) {
