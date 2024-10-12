@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cidade</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <div class="colored-section">
+            <header>
+                <h1>A minha Cidade</h1>
+            </header>
+        </div>
+
+        <div class="seccao-pequena">
+            <nav>
+                <a href = "index.html">Home</a>
+                <a href = "local.html">Localização</a>
+                <a href = "multimedia.html">Multimédia</a>
+                <a href = "info.html">Informação</a>
+                <a href = "quizz.html">Quizz</a>
+                <a href = "viagem.html">Viagem</a>
+            </nav>
+        </div>
+
+        <main>
+            <img src = "images/WarsawChristmas.jpg" width="640" height="360">
+            
+            
+            <section id="Topic">
+                <form method="get" action="https://postman-echo.com/get" id="quizz">
+
+                    <h1>Dados pessoais</h1>
+
+                    <fieldset>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" autocomplete="on" maxlength="14" placeholder="Alexandre" autofocus required form="quizz">  
+
+                        <label for="apelido">Apelido: </label>
+                        <input type="text" name="apelido" id="apelido" autocomplete="on" maxlength="14" size="18" placeholder="Lau" required form="quizz">
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" autocomplete="on" placeholder="alexandre.krawiec.lau@gmail.com" required form="quizz">
+                    </fieldset>
+    
+                    <h1>Quizz</h1>
+
+                    <fieldset>
+                        <h2>Perguntas multiplas</h2>
+    
+                        <p>Qual é o rio que atravessa a cidade de Varsóvia?</p>
+
+                        <label for="perguntaMultiplaRio1">A) Vístula</label>
+                        <input type="radio" name="perguntaRio" id="perguntaMultiplaRio1" form="quizz">
+
+                        <label for="perguntaMultiplaRio2">B) Danúbio</label>
+                        <input type="radio" name="perguntaRio" id="perguntaMultiplaRio2" form="quizz">
+
+                        <label for="perguntaMultiplaRio3">C) Reno</label>
+                        <input type="radio" name="perguntaRio" id="perguntaMultiplaRio3" form="quizz">
+
+                        <label for="perguntaMultiplaRio4">D) Tibre</label>
+                        <input type="radio" name="perguntaRio" id="perguntaMultiplaRio4" form="quizz">
+    
+                        <p>Em que ano ocorreu a Revolta de Varsóvia, uma das maiores insurreições durante a Segunda Guerra Mundial?</p>
+
+                        <label for="perguntaMultiplaRevolta1">A) 1939</label>
+                        <input type="radio" name="perguntaRevolta" id="perguntaMultiplaRevolta1" form="quizz">
+
+                        <label for="perguntaMultiplaRevolta2">B) 1942</label>
+                        <input type="radio" name="perguntaRevolta" id="perguntaMultiplaRevolta2" form="quizz">
+
+                        <label for="perguntaMultiplaRevolta3">C) 1944</label>
+                        <input type="radio" name="perguntaRevolta" id="perguntaMultiplaRevolta3" form="quizz">
+
+                        <label for="perguntaMultiplaRevolta4">D) 1946</label>
+                        <input type="radio" name="perguntaRevolta" id="perguntaMultiplaRevolta4" form="quizz">
+    
+                        <p>Qual destes monumentos é um dos principais símbolos de Varsóvia?</p>
+
+                        <label for="perguntaMonumento1">A) Torre de Belém</label>
+                        <input type="radio" name="perguntaMonumento" id="perguntaMonumento1" form="quizz">
+
+                        <label for="perguntaMonumento2">B) Sireninha de Varsóvia</label>
+                        <input type="radio" name="perguntaMonumento" id="perguntaMonumento2" form="quizz">
+
+                        <label for="perguntaMonumento3">C) Coliseu</label>
+                        <input type="radio" name="perguntaMonumento" id="perguntaMonumento3" form="quizz">
+
+                        <label for="perguntaMonumento4">D) Torre Eiffel</label>
+                        <input type="radio" name="perguntaMonumento" id="perguntaMonumento4" form="quizz">
+                
+                        <h2>Verdadeiro ou falso</h2>
+
+                        <p>Varsóvia foi completamente destruída durante a Segunda Guerra Mundial e reconstruída posteriormente.</p>
+                
+                        <label for="perguntaVerdadeiroFalsoDestruicao1">Verdadeiro </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoDestruicao" id="perguntaVerdadeiroFalsoDestruicao1" form="quizz">
+                    
+                        <label for="perguntaVerdadeiroFalsoDestruicao2">Falso </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoDestruicao" id="perguntaVerdadeiroFalsoDestruicao2" form="quizz">
+    
+                        <p>A Cidade Velha de Varsóvia é um Patrimônio Mundial da UNESCO.</p>
+
+                        <label for="perguntaVerdadeiroFalsoUnesco1">Verdadeiro </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoUnesco" id="perguntaVerdadeiroFalsoUnesco1" form="quizz">
+
+                        <label for="perguntaVerdadeiroFalsoUnesco2">Falso </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoUnesco" id="perguntaVerdadeiroFalsoUnesco2" form="quizz">
+    
+                        <p>Varsóvia é a segunda maior cidade da Polônia, depois de Cracóvia.</p>
+
+                        <label for="perguntaVerdadeiroFalsoCidadeMaior1">Verdadeiro </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoCidadeMaior" id="perguntaVerdadeiroFalsoCidadeMaior1" form="quizz">
+
+                        <label for="perguntaVerdadeiroFalsoCidadeMaior2">Falso </label>
+                        <input type="radio" name="perguntaVerdadeiroFalsoCidadeMaior" id="perguntaVerdadeiroFalsoCidadeMaior2" form="quizz">
+    
+                        <label for="enviar">Enviar: </label>
+                        <input type="submit" name="submit" form="quizz">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p>Diw 2024</p>
+        </footer>
+    </body>
+    </html>
