@@ -57,9 +57,18 @@ th {
     border: 2px solid #333;
 }
 
+.ordered-list {
+    list-style-type: decimal; /* Use decimal numbers for ordered lists */
+    padding-left: 20px; /* Add padding to the left */
+}
+
 .left-side {
-    list-style-type: circle;
-    padding-left: 20px;
+    list-style-type: circle; /* Hollow circles for bullet points */
+    padding-left: 20px; /* Add padding to the left */
+}
+
+.left-side li, .ordered-list li {
+    font-size: 2em; /* Font size is double that of the parent */
 }
 
 #Fotografias h3, #Video h3, #Poema h3 {
