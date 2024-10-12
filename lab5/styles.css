@@ -57,6 +57,11 @@ th {
     border: 2px solid #333;
 }
 
+.left-side {
+    list-style-type: disc; /* Ensures bullet points are shown */
+    padding-left: 20px; /* Adds left padding for better alignment */
+}
+
 #Fotografias h3, #Video h3, #Poema h3 {
     color: #4CAF50;
     font-size: 24px;
