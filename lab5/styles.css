@@ -27,16 +27,32 @@ nav, a:hover {
     text-decoration: none;
 }
 
-ol {
-    list-style-type: upper-roman;
+#best-months {
+    margin: 20px;
 }
 
-ol li:nth-child(odd) {
-    color: rgb(44, 44, 44);
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-ol li:nth-child(even) {
-    color: rgb(143, 143, 255);
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.color1 {
+    background-color: rgb(239, 239, 255); /* Light color for first set */
+}
+
+.color2 {
+    background-color: rgb(255, 255, 255); /* White for second set */
+}
+
+th {
+    background-color: rgb(39, 201, 255); /* Header color */
+    color: white;
 }
 
 #Fotografias h3, #Video h3, #Poema h3 {
