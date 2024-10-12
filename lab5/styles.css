@@ -32,10 +32,9 @@ nav, a:hover {
 }
 
 table {
-    max-width: 600px;
+    max-width: 400px; /* Set a smaller max width for the table */
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
 }
 
 th, td {
@@ -57,7 +56,6 @@ th {
     color: white;
     border: 2px solid #333;
 }
-
 
 #Fotografias h3, #Video h3, #Poema h3 {
     color: #4CAF50;
