@@ -32,11 +32,11 @@ ol {
 }
 
 ol li:nth-child(odd) {
-    color: red;
+    color: rgb(44, 44, 44);
 }
 
 ol li:nth-child(even) {
-    color: blue;
+    color: rgb(143, 143, 255);
 }
 
 #Fotografias h3, #Video h3, #Poema h3 {
