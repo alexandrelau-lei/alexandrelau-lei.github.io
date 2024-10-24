@@ -8,20 +8,25 @@ body {
     flex-direction: column;
     height: auto;
     padding: 20px;
+    background-color: black;
   }
 
 .container {
-    background-color: #FFF;
+    background-color: #000000;
     padding: 20px;
     width: 600px;
     border-radius: 10px;
 }
 
 header {
-    text-align: center;
+    text-align: left;
     background-color: #b7b7b7;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+header a{
+    text-align: right;
 }
 
 header h1 {
