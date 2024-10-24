@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cidade</title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
-
-    <body>
-        <div>
-            <header>
-                <h1>A minha Cidade</h1>
-            </header>
-        </div>
-
-        <ul>
-            <li><a href = "/lab1/report.html">Lab1</a> - Conhecer a Internet </li>
-            <li><a href = "/lab2/index.html">Lab2</a> - HTML "A minha Cidade" </li>
-            <li><a href = "/lab3/index.html">Lab3</a> - Formulários </li>
-            <li><a href = "/lab4/index.html">Lab4</a> - CSS </li>
-            <li><a href = "/lab5/index.html">Lab5</a> - Cidades </li>
-            <li><a href = "/lab6/index.html">Lab6</a> - Cidades </li>
-        </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Aluno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alexandre Lau</h1>
+        </header>
 
         <main>
-            <div class="imagens">
-               <img src= "images/WarsawChristmas.jpg" width="600" height="330" alt="Varsóvia">
-               <img src="images/WarsawWinter (1).jpg" width="600" height="330" alt="Varsóvia">
-               <img src=   "images/WarsawScenery.jpg" width="600" height="330" alt="Varsóvia"> 
-            </div>
+            <section class="card">
+                <h2>Interfaces Web</h2>
+                <p>HTML é raiz,<br>CSS a cor,<br>JavaScript, a magia<br> Dum site em flor.</p>
+            </section>
 
-            <section id = "Topic">
-                <h2>Home</h2>
+            <section class="card">
+                <img src="images/=gaot nhev.02.png" height = 100 alt="Gato Funny">
+            </section>
 
-                <p>A minha cidade é muito linda!!!</p>
+            <section class="card">
+                <h2>Introdução</h2>
+                <p>Vamos aprender sobre:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+            </section>
+
+            <section class="card">
+                <h2>Laboratórios</h2>
+                <div class="labs">
+                    <button><a href = "/lab1/report.html">Lab1</a></button>
+                    <button><a href = "/lab2/report.html">Lab2</a></button>
+                    <button><a href = "/lab3/report.html">Lab3</a></button>
+                    <button><a href = "/lab4/report.html">Lab4</a></button>
+                    <button><a href = "/lab5/report.html">Lab5</a></button>
+                    <button><a href = "/lab6/report.html">Lab6</a></button>
+                </div>
             </section>
         </main>
 
-
         <footer>
-            <p> 2024 - Licenciatura em Engenharia Informática</p>
+            <p>2024 - Licenciatura em Engenharia Informática</p>
         </footer>
-    </body>
+    </div>
+</body>
 </html>

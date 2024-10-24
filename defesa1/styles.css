@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #F0F0F0;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,6 @@ body {
 
 .container {
     background-color: #FFF;
-    border: 2px solid black;
     padding: 20px;
     width: 600px;
     border-radius: 10px;
@@ -23,7 +22,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #b7b7b7;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -38,6 +37,21 @@ main {
     gap: 20px;
 }
 
+h2 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li {
+    text-align: left;
+    margin-left: 40px;
+}
+
 .card {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
@@ -48,18 +62,26 @@ main {
 
 .labs button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #ccc;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.labs button:disabled {
-    background-color: #eee;
+.labs button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.labs a:hover {
+    color: white;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
+    background-color: #b7b7b7;
+    padding: 10px;
+    margin-bottom: 20px;
 }
