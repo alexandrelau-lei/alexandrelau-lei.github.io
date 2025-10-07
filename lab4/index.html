@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página artilhada — 5 eventos</title>
+  <link rel="stylesheet" href="Css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <!-- hover muda o texto -->
+    <p class="linha">
+      <span class="n">1.</span>
+      <span id="hoverText">Passa por aqui!</span>
+    </p>
+
+    <!-- pinta o texto “Pinta-me!” -->
+    <p class="linha">
+      <span class="n">2.</span>
+      <span id="paintMe">Pinta-me!</span>
+      <button data-color="red">Red</button>
+      <button data-color="green">Green</button>
+      <button data-color="blue">Blue</button>
+    </p>
+
+    <!-- input muda de cor consoante nº de letras -->
+    <p class="linha">
+      <span class="n">3.</span>
+      <label for="writeBox">Experimenta escrever…</label>
+      <input id="writeBox" type="text" />
+    </p>
+
+    <!-- submeter cor em inglês -->
+    <form id="colorForm" class="linha">
+      <span class="n">4.</span>
+      <label for="bgColor">Escolha uma cor em inglês:</label>
+      <input id="bgColor" type="text" autocomplete="off" />
+      <button type="submit">submeter</button>
+    </form>
+
+    <!-- contador -->
+    <p class="linha">
+      <span class="n">5.</span>
+      <button id="countBtn">Conta!</button>
+      <span id="countVal">0</span>
+    </p>
+
+    <!-- imagem -->
+    <p class="linha">
+      <span class="n">6.</span>
+      <span>Imagem surpresa:</span>
+      <img id="randomImg" src="https://picsum.photos/150" alt="Imagem aleatória" />
+    </p>
+  </main>
+
+  
+
+  <script src="Scripts/main.js"></script>
+</body>
+</html>
