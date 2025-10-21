@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header aria-label="Cabeçalho do site">
+    <section>
+      <h1>Loja Exemplo</h1>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#cesto">Cesto</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main id="conteudo">
+    <section id="produtos" aria-labelledby="titulo-produtos">
+      <header>
+        <h2 id="titulo-produtos">Produtos</h2>
+        <p>Serão carregados dinamicamente pelo JavaScript.</p>
+      </header>
+      <ul id="lista-produtos" class="cards" aria-live="polite" aria-busy="false"></ul>
+    </section>
+
+    <section id="cesto" aria-labelledby="titulo-cesto">
+      <header>
+        <h2 id="titulo-cesto">Cesto</h2>
+        <p>Persistência com Local Storage (será mostrado no passo seguinte).</p>
+      </header>
+      <ul id="lista-cesto" class="cards" aria-live="polite" aria-busy="false"></ul>
+      <aside class="totais" aria-label="Resumo do cesto">
+        <p><strong>Itens:</strong> <output id="total-itens">0</output></p>
+        <p><strong>Total:</strong> € <output id="total-preco">0.00</output></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <time id="ano-atual"></time> Loja Exemplo.</small>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
