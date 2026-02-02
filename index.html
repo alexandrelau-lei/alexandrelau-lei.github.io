@@ -1,111 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
-    <meta charset="utf-8">
-    <title>Primeira Página</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <title>Primeira Página</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="topbar">
-        <h1>Primeira Página Web!</h1>
 
-        <nav class="menu">
-            <a href="#hero">Início</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#disciplina">Disciplina</a>
-        </nav>
-    </header>
+<header>
+  <h1>I love you Tery</h1>
+</header>
 
-    <main>
+<main>
 
-        <section id="hero">
-            <img src = "images/BATMAN.jpg" alt=Batman class="hero">
-            
-            <div class="hero-text">
-                <h2>"I am vengeance. I am the night. I am Batman."</h2>
-            </div>
-        </section>
+  <!-- HERO IMAGE -->
+  <section id="hero">
+    <img src="images/image.png" alt="I love you" class="hero">
+  </section>
 
-        <section id="projetos">
-            <div class="cards">
-                <a class="card" href="/lab1/index.html" target="_blank">
-                    <h3>Lab 1</h3>
-                    <p>Estrutura base e semântica</p>
-                </a>
+  <!-- TEXT -->
+  <section id="text">
+    <p>Choose wisely:</p>
+  </section>
 
-                <a class="card" href="/lab2/index.html" target="_blank">
-                    <h3>Lab 2</h3>
-                    <p>Estilos e layout responsivo</p>
-                </a>
-
-                <a class="card" href="/lab3/index.html" target="_blank">
-                    <h3>Lab 3</h3>
-                    <p>Interatividade com JS</p>
-                </a>
-
-                <a class="card" href="/lab4/index.html" target="_blank">
-                    <h3>Lab 4</h3>
-                    <p>JavaScript</p>
-                </a>
-
-                <a class="card" href="/lab5/index.html" target="_blank">
-                    <h3>Lab 5</h3>
-                    <p>JavaScript Part 2</p>
-                </a>
-
-                <a class="card" href="/lab6/index.html" target="_blank">
-                    <h3>Lab 6</h3>
-                    <p>Loja</p>
-                </a>
-
-                <a class="card" href="/lab7/index.html" target="_blank">
-                    <h3>Lab 7</h3>
-                    <p>Loja Part 2</p>
-                </a>
-            </div>
-        </section>
-
-        <section id="disciplinas">
-
-            <div class="disc-texto">
-                <h2>Disciplina</h2>
-                <p>
-                    Nesta unidade aprendemos HTML5, CSS, JavaScript, acessibilidade, layouts
-                    responsivos e boas práticas de desenvolvimento Web.
-    </p>
-    <p>
-      Exploramos semântica, Flexbox, Grid, media queries e integração com
-      ferramentas modernas.
-    </p>
+  <!-- PLAY AREA -->
+  <div id="play-area">
+    <button id="noBtn" class="btn btn-no">No</button>
+    <button id="yesBtn" class="btn btn-yes">Yes</button>
   </div>
 
-        </section>
+  <!-- SCRIPT -->
+  <script>
+    (function () {
 
+      const noBtn = document.getElementById("noBtn");
+      const yesBtn = document.getElementById("yesBtn");
+      const area = document.getElementById("play-area");
 
-        <p>Eis a minha primeira página Web!</p>
-        <p>
-            Na Unidade Curricular de
-            <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232"> Desenvolvimento de Interfaces Web </a>
-            abordaremos as seguintes tecnologias Web &#127760;:
-        </p>
-            
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript </li>
-            <li>React e Next.js</li>
-        </ul>
+      let yesScale = 1;
 
-        <p>Iremos criar soluções criativas!</p>
+      // Initial positioning
+      area.style.position = "relative";
+      noBtn.style.position = "absolute";
+      yesBtn.style.position = "absolute";
 
-        <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web">
-    </main>
-    
-    <footer>
-        <p>Universidade Lusófona 2025 </p>
-    </footer>
+      yesBtn.style.left = "50%";
+      yesBtn.style.top = "50%";
+      yesBtn.style.transform = "translate(-50%, -50%) scale(1)";
+
+      noBtn.style.left = "16px";
+      noBtn.style.top = "16px";
+
+      // Move NO button + grow YES
+      noBtn.addEventListener("click", () => {
+        const rect = area.getBoundingClientRect();
+
+        const x = Math.random() * (rect.width - noBtn.offsetWidth);
+        const y = Math.random() * (rect.height - noBtn.offsetHeight);
+
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+
+        yesScale += 0.15;
+        yesBtn.style.transform = `translate(-50%, -50%) scale(${yesScale})`;
+      });
+
+      // YES button → open modal
+      yesBtn.addEventListener("click", openModal);
+
+      function openModal() {
+
+        // Create modal once
+        if (!document.getElementById("loveModal")) {
+          document.body.insertAdjacentHTML("beforeend", `
+            <div id="loveModal" class="modal">
+              <div class="modal-content">
+                <button class="modal-close">&times;</button>
+
+                <!-- TEXT ABOVE VIDEO -->
+                <div class="modal-text">
+                  I LOVE YOU ❤️
+                </div>
+
+                <!-- VIDEO -->
+                <video class="modal-video"
+                       autoplay
+                       loop
+                       muted
+                       playsinline>
+                  <source src="images/love.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+            </div>
+          `);
+
+          // Close actions
+          document.querySelector(".modal-close").onclick = closeModal;
+
+          document.getElementById("loveModal").onclick = (e) => {
+            if (e.target.id === "loveModal") closeModal();
+          };
+
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeModal();
+          });
+        }
+
+        document.getElementById("loveModal").classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("loveModal");
+        if (!modal) return;
+
+        modal.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+    })();
+  </script>
+
+</main>
+
+<footer>
+  <p>Made by your stupid man child Lau</p>
+</footer>
+
 </body>
 </html>
